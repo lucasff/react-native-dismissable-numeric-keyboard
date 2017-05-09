@@ -49,7 +49,10 @@
             
         UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:item target:view action:NSSelectorFromString(@"resignFirstResponder")];
         
-        barButtonItem.tintColor = [UIColor darkTextColor];
+        barButtonItem.tintColor = [UIColor colorWithRed:246/255.0
+                                 green:171/255.0
+                                  blue:10/255.0
+                                 alpha:1];
             
         [toolbar setItems:[NSArray arrayWithObjects:flexibleSpace, barButtonItem, nil]];
         ((UITextField *)view).inputAccessoryView = toolbar;
